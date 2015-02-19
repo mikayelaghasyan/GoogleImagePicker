@@ -6,6 +6,7 @@ function gipInit() {
 	gipHideRedundantNodes();
 	gipInitLinkCaptures();
 	gipInitObserver();
+	window.location = "gip:initialized";
 }
 
 function gipInitImageContainer() {

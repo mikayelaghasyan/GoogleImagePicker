@@ -36,7 +36,10 @@ class GoogleWebViewController: UIViewController, UISearchBarDelegate, UIWebViewD
 
 	func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
 		var href = request.URL.absoluteString
-		if (href!.hasPrefix("gip:")) {
+		if (href!.hasPrefix("gip:initialized")) {
+			self.webView.hidden = false
+			return false
+		} else if (href!.hasPrefix("gip:")) {
 			var comps = href?.componentsSeparatedByString(":")
 			var imageInfo = [String: String]()
 			if (comps!.count > 1) {
@@ -72,7 +75,7 @@ class GoogleWebViewController: UIViewController, UISearchBarDelegate, UIWebViewD
 
 		applyJavaScript()
 
-		webView.hidden = false
+//		webView.hidden = false
 	}
 
 	func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
