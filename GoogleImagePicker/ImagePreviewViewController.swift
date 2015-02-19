@@ -40,6 +40,8 @@ class ImagePreviewViewController: UIViewController {
 		NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
 			var image = UIImage(data: data)
 			self.activityIndicator.stopAnimating()
+			self.widthConstraint.constant = image!.size.width
+			self.heightConstraint.constant = image!.size.height
 			self.imageView.image = image
 		}
 	}

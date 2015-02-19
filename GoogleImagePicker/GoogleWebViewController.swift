@@ -30,7 +30,7 @@ class GoogleWebViewController: UIViewController, UISearchBarDelegate, UIWebViewD
 	}
 
 	func loadGoogleSearch() {
-		var req = NSURLRequest(URL: NSURL(string: NSString(format: "https://www.google.com/search?tbm=isch&q=%@", searchTerm.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!))!)
+		var req = NSURLRequest(URL: NSURL(string: NSString(format: "https://www.google.com/search?safe=active&tbm=isch&q=%@", searchTerm.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!))!)
 		webView.loadRequest(req)
 	}
 
