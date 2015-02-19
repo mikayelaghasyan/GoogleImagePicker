@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		431119FE1A94674100ACAE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431119FD1A94674100ACAE34 /* AppDelegate.swift */; };
+		43111A001A94674100ACAE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431119FF1A94674100ACAE34 /* ViewController.swift */; };
+		43111A031A94674100ACAE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43111A011A94674100ACAE34 /* Main.storyboard */; };
+		43111A051A94674100ACAE34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43111A041A94674100ACAE34 /* Images.xcassets */; };
+		43111A081A94674100ACAE34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43111A061A94674100ACAE34 /* LaunchScreen.xib */; };
+		43111A141A94674100ACAE34 /* GoogleImagePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43111A131A94674100ACAE34 /* GoogleImagePickerTests.swift */; };
+		43111A1E1A946ACA00ACAE34 /* GoogleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43111A1D1A946ACA00ACAE34 /* GoogleWebViewController.swift */; };
+		43111A201A94825600ACAE34 /* google.js in Resources */ = {isa = PBXBuildFile; fileRef = 43111A1F1A94825600ACAE34 /* google.js */; };
+		432FCE2F1A967C320086C58E /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FCE2E1A967C320086C58E /* ImagePreviewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43111A0E1A94674100ACAE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 431119F01A94674100ACAE34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 431119F71A94674100ACAE34;
+			remoteInfo = GoogleImagePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		431119F81A94674100ACAE34 /* GoogleImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		431119FC1A94674100ACAE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		431119FD1A94674100ACAE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		431119FF1A94674100ACAE34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43111A021A94674100ACAE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43111A041A94674100ACAE34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		43111A071A94674100ACAE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		43111A0D1A94674100ACAE34 /* GoogleImagePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleImagePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43111A121A94674100ACAE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43111A131A94674100ACAE34 /* GoogleImagePickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleImagePickerTests.swift; sourceTree = "<group>"; };
+		43111A1D1A946ACA00ACAE34 /* GoogleWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleWebViewController.swift; sourceTree = "<group>"; };
+		43111A1F1A94825600ACAE34 /* google.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = google.js; sourceTree = "<group>"; };
+		432FCE2E1A967C320086C58E /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		431119F51A94674100ACAE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43111A0A1A94674100ACAE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		431119EF1A94674100ACAE34 = {
+			isa = PBXGroup;
+			children = (
+				431119FA1A94674100ACAE34 /* GoogleImagePicker */,
+				43111A101A94674100ACAE34 /* GoogleImagePickerTests */,
+				431119F91A94674100ACAE34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		431119F91A94674100ACAE34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				431119F81A94674100ACAE34 /* GoogleImagePicker.app */,
+				43111A0D1A94674100ACAE34 /* GoogleImagePickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		431119FA1A94674100ACAE34 /* GoogleImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				431119FD1A94674100ACAE34 /* AppDelegate.swift */,
+				431119FF1A94674100ACAE34 /* ViewController.swift */,
+				43111A011A94674100ACAE34 /* Main.storyboard */,
+				43111A041A94674100ACAE34 /* Images.xcassets */,
+				43111A061A94674100ACAE34 /* LaunchScreen.xib */,
+				431119FB1A94674100ACAE34 /* Supporting Files */,
+				43111A1D1A946ACA00ACAE34 /* GoogleWebViewController.swift */,
+				432FCE2E1A967C320086C58E /* ImagePreviewViewController.swift */,
+			);
+			path = GoogleImagePicker;
+			sourceTree = "<group>";
+		};
+		431119FB1A94674100ACAE34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				431119FC1A94674100ACAE34 /* Info.plist */,
+				43111A1F1A94825600ACAE34 /* google.js */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43111A101A94674100ACAE34 /* GoogleImagePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				43111A131A94674100ACAE34 /* GoogleImagePickerTests.swift */,
+				43111A111A94674100ACAE34 /* Supporting Files */,
+			);
+			path = GoogleImagePickerTests;
+			sourceTree = "<group>";
+		};
+		43111A111A94674100ACAE34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43111A121A94674100ACAE34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		431119F71A94674100ACAE34 /* GoogleImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43111A171A94674100ACAE34 /* Build configuration list for PBXNativeTarget "GoogleImagePicker" */;
+			buildPhases = (
+				431119F41A94674100ACAE34 /* Sources */,
+				431119F51A94674100ACAE34 /* Frameworks */,
+				431119F61A94674100ACAE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleImagePicker;
+			productName = GoogleImagePicker;
+			productReference = 431119F81A94674100ACAE34 /* GoogleImagePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43111A0C1A94674100ACAE34 /* GoogleImagePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43111A1A1A94674100ACAE34 /* Build configuration list for PBXNativeTarget "GoogleImagePickerTests" */;
+			buildPhases = (
+				43111A091A94674100ACAE34 /* Sources */,
+				43111A0A1A94674100ACAE34 /* Frameworks */,
+				43111A0B1A94674100ACAE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43111A0F1A94674100ACAE34 /* PBXTargetDependency */,
+			);
+			name = GoogleImagePickerTests;
+			productName = GoogleImagePickerTests;
+			productReference = 43111A0D1A94674100ACAE34 /* GoogleImagePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		431119F01A94674100ACAE34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mikayel Aghasyan";
+				TargetAttributes = {
+					431119F71A94674100ACAE34 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 6869D6VR48;
+					};
+					43111A0C1A94674100ACAE34 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 431119F71A94674100ACAE34;
+					};
+				};
+			};
+			buildConfigurationList = 431119F31A94674100ACAE34 /* Build configuration list for PBXProject "GoogleImagePicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 431119EF1A94674100ACAE34;
+			productRefGroup = 431119F91A94674100ACAE34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				431119F71A94674100ACAE34 /* GoogleImagePicker */,
+				43111A0C1A94674100ACAE34 /* GoogleImagePickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		431119F61A94674100ACAE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43111A031A94674100ACAE34 /* Main.storyboard in Resources */,
+				43111A201A94825600ACAE34 /* google.js in Resources */,
+				43111A081A94674100ACAE34 /* LaunchScreen.xib in Resources */,
+				43111A051A94674100ACAE34 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43111A0B1A94674100ACAE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		431119F41A94674100ACAE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43111A001A94674100ACAE34 /* ViewController.swift in Sources */,
+				431119FE1A94674100ACAE34 /* AppDelegate.swift in Sources */,
+				432FCE2F1A967C320086C58E /* ImagePreviewViewController.swift in Sources */,
+				43111A1E1A946ACA00ACAE34 /* GoogleWebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43111A091A94674100ACAE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43111A141A94674100ACAE34 /* GoogleImagePickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43111A0F1A94674100ACAE34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 431119F71A94674100ACAE34 /* GoogleImagePicker */;
+			targetProxy = 43111A0E1A94674100ACAE34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43111A011A94674100ACAE34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43111A021A94674100ACAE34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43111A061A94674100ACAE34 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43111A071A94674100ACAE34 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43111A151A94674100ACAE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		43111A161A94674100ACAE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43111A181A94674100ACAE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GoogleImagePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		43111A191A94674100ACAE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GoogleImagePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		43111A1B1A94674100ACAE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoogleImagePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleImagePicker.app/GoogleImagePicker";
+			};
+			name = Debug;
+		};
+		43111A1C1A94674100ACAE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoogleImagePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleImagePicker.app/GoogleImagePicker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		431119F31A94674100ACAE34 /* Build configuration list for PBXProject "GoogleImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43111A151A94674100ACAE34 /* Debug */,
+				43111A161A94674100ACAE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43111A171A94674100ACAE34 /* Build configuration list for PBXNativeTarget "GoogleImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43111A181A94674100ACAE34 /* Debug */,
+				43111A191A94674100ACAE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43111A1A1A94674100ACAE34 /* Build configuration list for PBXNativeTarget "GoogleImagePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43111A1B1A94674100ACAE34 /* Debug */,
+				43111A1C1A94674100ACAE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 431119F01A94674100ACAE34 /* Project object */;
+}

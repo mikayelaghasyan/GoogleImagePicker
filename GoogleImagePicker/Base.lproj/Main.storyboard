@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="udM-ul-DPr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="WKC-Px-17w">
+            <objects>
+                <navigationController id="udM-ul-DPr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yla-sE-kv3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bUv-QB-ajh" kind="relationship" relationship="rootViewController" id="rjC-Q5-mjA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57q-rS-4dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="364"/>
+        </scene>
+        <!--Google Image Picker-->
+        <scene sceneID="dFi-ZQ-3N5">
+            <objects>
+                <viewController id="bUv-QB-ajh" customClass="GoogleWebViewController" customModule="GoogleImagePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g6d-zc-B4i"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ila-x7-1Jr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OtY-gg-aJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="zgq-T6-3Cr">
+                                <rect key="frame" x="16" y="64" width="568" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bUv-QB-ajh" id="aV4-cd-NIr"/>
+                                </connections>
+                            </searchBar>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zse-Of-7lJ">
+                                <rect key="frame" x="16" y="108" width="568" height="2"/>
+                            </progressView>
+                            <webView contentMode="scaleToFill" suppressesIncrementalRendering="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lSa-J8-oXa">
+                                <rect key="frame" x="16" y="110" width="568" height="490"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bUv-QB-ajh" id="RYc-i1-vQX"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lSa-J8-oXa" firstAttribute="leading" secondItem="OtY-gg-aJ0" secondAttribute="leadingMargin" id="5ud-dU-5IK"/>
+                            <constraint firstItem="Ila-x7-1Jr" firstAttribute="top" secondItem="lSa-J8-oXa" secondAttribute="bottom" id="D1z-WF-Hhr"/>
+                            <constraint firstItem="zgq-T6-3Cr" firstAttribute="top" secondItem="g6d-zc-B4i" secondAttribute="bottom" id="N5A-q1-Giu"/>
+                            <constraint firstItem="zgq-T6-3Cr" firstAttribute="leading" secondItem="OtY-gg-aJ0" secondAttribute="leadingMargin" id="OPQ-y6-DE6"/>
+                            <constraint firstItem="Zse-Of-7lJ" firstAttribute="trailing" secondItem="OtY-gg-aJ0" secondAttribute="trailingMargin" id="Rld-ZR-hBO"/>
+                            <constraint firstItem="lSa-J8-oXa" firstAttribute="top" secondItem="Zse-Of-7lJ" secondAttribute="bottom" id="Y1G-m0-U7E"/>
+                            <constraint firstItem="Zse-Of-7lJ" firstAttribute="leading" secondItem="OtY-gg-aJ0" secondAttribute="leadingMargin" id="hdO-kJ-qih"/>
+                            <constraint firstItem="Zse-Of-7lJ" firstAttribute="top" secondItem="zgq-T6-3Cr" secondAttribute="bottom" id="n2W-5t-cU7"/>
+                            <constraint firstItem="lSa-J8-oXa" firstAttribute="trailing" secondItem="OtY-gg-aJ0" secondAttribute="trailingMargin" id="s6K-DS-FZd"/>
+                            <constraint firstItem="zgq-T6-3Cr" firstAttribute="trailing" secondItem="OtY-gg-aJ0" secondAttribute="trailingMargin" id="slW-aj-v5W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Google Image Picker" id="cjD-4a-GUq"/>
+                    <connections>
+                        <outlet property="progressView" destination="Zse-Of-7lJ" id="Jrl-p8-kTu"/>
+                        <outlet property="searchBar" destination="zgq-T6-3Cr" id="DJG-WL-mG0"/>
+                        <outlet property="webView" destination="lSa-J8-oXa" id="Q5O-J9-qqp"/>
+                        <segue destination="bvP-Rq-6QV" kind="show" identifier="ShowImagePreview" id="vbv-cl-OqX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEp-ZK-kof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182" y="364"/>
+        </scene>
+        <!--Image Preview View Controller-->
+        <scene sceneID="1hs-Be-a4z">
+            <objects>
+                <viewController id="bvP-Rq-6QV" customClass="ImagePreviewViewController" customModule="GoogleImagePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ecO-cb-UfI"/>
+                        <viewControllerLayoutGuide type="bottom" id="sxh-XO-b9z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pqc-CV-3tx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Itc-cQ-UC7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="dTv-51-LTj"/>
+                                    <constraint firstAttribute="width" constant="600" id="dri-lS-IxI"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AvI-Lm-CsW">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AvI-Lm-CsW" firstAttribute="centerX" secondItem="Itc-cQ-UC7" secondAttribute="centerX" id="7Gx-4S-lUm"/>
+                            <constraint firstAttribute="centerY" secondItem="Itc-cQ-UC7" secondAttribute="centerY" id="ntV-9U-znN"/>
+                            <constraint firstAttribute="centerX" secondItem="Itc-cQ-UC7" secondAttribute="centerX" id="oQJ-0M-NX9"/>
+                            <constraint firstItem="AvI-Lm-CsW" firstAttribute="centerY" secondItem="Itc-cQ-UC7" secondAttribute="centerY" id="xZb-50-BSm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="AvI-Lm-CsW" id="1g2-VY-bGt"/>
+                        <outlet property="heightConstraint" destination="dTv-51-LTj" id="1jo-nF-OgA"/>
+                        <outlet property="imageView" destination="Itc-cQ-UC7" id="dGX-G2-1dy"/>
+                        <outlet property="widthConstraint" destination="dri-lS-IxI" id="AGm-1v-FLT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uf2-MP-vZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1901" y="364"/>
+        </scene>
+    </scenes>
+</document>
