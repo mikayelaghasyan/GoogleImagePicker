@@ -36,6 +36,7 @@ class GoogleWebViewController: UIViewController, UISearchBarDelegate, UIWebViewD
 
 	func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
 		var href = request.URL.absoluteString
+		NSLog("%@", href!);
 		if (href!.hasPrefix("gip:initialized")) {
 			self.webView.hidden = false
 			return false
@@ -75,10 +76,11 @@ class GoogleWebViewController: UIViewController, UISearchBarDelegate, UIWebViewD
 
 		applyJavaScript()
 
-//		webView.hidden = false
+		webView.hidden = false
 	}
 
 	func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
+		NSLog("Error: %@", error.localizedDescription);
 		webView.loadHTMLString("<h1>Something went wrong!</h1>", baseURL: nil)
 	}
 
@@ -89,9 +91,9 @@ class GoogleWebViewController: UIViewController, UISearchBarDelegate, UIWebViewD
 	func applyJavaScript() {
 		var jsFilePath = NSBundle.mainBundle().pathForResource("google", ofType: "js", inDirectory: "")
 		var js = NSString(contentsOfFile: jsFilePath!, encoding: NSUTF8StringEncoding, error: nil)
-		var html = webView.stringByEvaluatingJavaScriptFromString("document.body.innerHTML");
+//		var html = webView.stringByEvaluatingJavaScriptFromString("document.body.innerHTML");
 //		NSLog("%@", html!);
-		webView.stringByEvaluatingJavaScriptFromString(js!)
+//		webView.stringByEvaluatingJavaScriptFromString(js!)
 	}
 
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
